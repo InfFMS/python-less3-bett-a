@@ -8,7 +8,7 @@ a = int(input())
 while a:
     if 9 < a < 99:
         count += 1
-    elif not(9 < a < 99) and a != 0:
+    elif not(9 < a < 100) and a != 0:
         another += 1
     a = int(input())
 
