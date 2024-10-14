@@ -14,8 +14,14 @@ for _ in range(n - 1):
             maxx = a
 
 
-if not(9 < minn < 100) and minn % 3 != 0:
+if not(9 < minn < 100 or minn % 3 == 0) and not(9 < maxx < 100 or maxx % 3 == 0):
     print('нет')
+
+elif minn % 3 != 0 and maxx % 3 == 0:
+    minn = maxx
+    print(f'Минимальное: {minn}')
+    print(f'Максимальное: {maxx}')
 else:
     print(f'Минимальное: {minn}')
     print(f'Максимальное: {maxx}')
+
