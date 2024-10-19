@@ -6,7 +6,7 @@ count = 0
 another = 0
 a = int(input())
 while a:
-    if 9 < a < 99:
+    if 9 < a < 100:
         count += 1
     elif not(9 < a < 100) and a != 0:
         another += 1
