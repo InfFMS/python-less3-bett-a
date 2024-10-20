@@ -2,3 +2,15 @@
 # Определить, сколько было введено двузначных натуральных чисел,
 # и сколько других.
 
+count = 0
+another = 0
+a = int(input())
+while a:
+    if 9 < a < 100:
+        count += 1
+    elif not(9 < a < 100) and a != 0:
+        another += 1
+    a = int(input())
+
+print(f'Двухзначных натуральных чисел: {count}')
+print(f'Остальных чисел: {another}')
